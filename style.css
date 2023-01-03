@@ -7,14 +7,16 @@
 }
 body{
     background-image: url('https://th.bing.com/th/id/R.c841c38757dfdb9a985a402195554561?rik=tu7%2fM5UuFAhe7Q&pid=ImgRaw&r=0');
-    overflow: hidden;
+    overflow:auto;
     background-repeat:no-repeat;
+    background-blend-mode: multiply;
+    width:100%;
 }
 ul{
     list-style-type:none;
     margin:0;
     padding:0;
-    overflow: hidden;
+    width: 100%;
     background-image: url('https://th.bing.com/th/id/R.240c5578762f9009378dea6140d4dc6a?rik=qAuNNE2pMOME%2fQ&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fW0EZFqb.jpg&ehk=tqFcpfJH3Qozg5ZoKGP1Yub7pd778s102VvRCj7vuWM%3d&risl=&pid=ImgRaw&r=0');
 }
 
@@ -22,13 +24,13 @@ li a{
   display: flex;  
   color: rgb(78, 167, 226);
   text-align: center;
-  padding: 15px 16px;
-  text-decoration: none;
+  padding: 15px 1px;
+  text-decoration:underline;
 justify-content: center;
 font-size:1.3em;
 }
 .container{
-    width:80vw;
+    width:70vw;
     position:absolute;
     left:50%;
     top: 0%;
@@ -37,24 +39,18 @@ font-size:1.3em;
 }
 .sub-container{
 display:grid;
-grid-template-columns:40% 40%;
+grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
 }
-.left{
-transform: translateX(75px);
-z-index:1;
 
-}
 .right{
     background:url('https://th.bing.com/th/id/R.7a1a81cd5cdd97c0324eec84071662b9?rik=SrBg9glhXEmOnQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-_L1ktLp_3Hc%2fUAU-VZy5C7I%2fAAAAAAAADLg%2fqHabgkm_dHY%2fs1600%2fRandom%2bHD%2bWallpapers%2b(23).jpg&ehk=hL1eZWO5xgLNtADU%2bx2UKTsf4ba4GrmkZJrDgWylEcg%3d&risl=&pid=ImgRaw&r=0');
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    transform: translateX(50px);
     border-radius: 5%;
 }
 
 .product-container{
    max-width: 500px;
    position: relative;
+   width:100%;
    background:url('https://th.bing.com/th/id/R.7a1a81cd5cdd97c0324eec84071662b9?rik=SrBg9glhXEmOnQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-_L1ktLp_3Hc%2fUAU-VZy5C7I%2fAAAAAAAADLg%2fqHabgkm_dHY%2fs1600%2fRandom%2bHD%2bWallpapers%2b(23).jpg&ehk=hL1eZWO5xgLNtADU%2bx2UKTsf4ba4GrmkZJrDgWylEcg%3d&risl=&pid=ImgRaw&r=0');
    height:580px;
    border-radius: 4%;
@@ -78,16 +74,18 @@ transform: rotateX(0deg);
     align-items: center;
     justify-content: center;
     margin-top: 3%;
-    font-size:2.6rem;
+    font-size:2.4rem;
 }
 .checkout-container{
     display: grid;
     place-items:center;
-    padding: 55px 35px;
+    padding: 35px 35px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     height:100%;
-    box-shadow:rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-shadow:rgba(0, 0, 0, 0.17) 0px -23px 25px 0px ;
 	-webkit-animation: slide-left 0.5s ease-in-out  ;
-	        animation: slide-left 0.5s ease-out alternate-reverse;
+	        animation: slide-left 0.5s ease-in-out alternate-reverse;
 }
 @keyframes slide-left {
   0% {
@@ -135,7 +133,7 @@ line-break: auto;
 }
 .imageSlide{
     display: block;
-    width:400px;
+    width:100%;
     margin: auto;
     transition:1s ease-in;
 }
@@ -146,7 +144,7 @@ img{
     height: 350px;
     max-height: 100%;
     border-radius:5%;
-    object-fit: cover;
+    object-fit:contain;
 }
 .clicker{
     position: relative;
