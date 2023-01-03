@@ -1,0 +1,253 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:rgb(49, 176, 226);
+    font-size: 1em;
+}
+body{
+    background-image: url('https://th.bing.com/th/id/R.c841c38757dfdb9a985a402195554561?rik=tu7%2fM5UuFAhe7Q&pid=ImgRaw&r=0');
+    overflow: hidden;
+    background-repeat:no-repeat;
+}
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-image: url('https://th.bing.com/th/id/R.240c5578762f9009378dea6140d4dc6a?rik=qAuNNE2pMOME%2fQ&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fW0EZFqb.jpg&ehk=tqFcpfJH3Qozg5ZoKGP1Yub7pd778s102VvRCj7vuWM%3d&risl=&pid=ImgRaw&r=0');
+}
+
+li a{
+  display: flex;  
+  color: rgb(78, 167, 226);
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+justify-content: center;
+font-size:1.3em;
+}
+.container{
+    width:80vw;
+    position:absolute;
+    left:50%;
+    top: 0%;
+    transform: translate(-50%,50%);
+    
+}
+.sub-container{
+display:grid;
+grid-template-columns:40% 40%;
+}
+.left{
+transform: translateX(75px);
+z-index:1;
+
+}
+.right{
+    background:url('https://th.bing.com/th/id/R.7a1a81cd5cdd97c0324eec84071662b9?rik=SrBg9glhXEmOnQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-_L1ktLp_3Hc%2fUAU-VZy5C7I%2fAAAAAAAADLg%2fqHabgkm_dHY%2fs1600%2fRandom%2bHD%2bWallpapers%2b(23).jpg&ehk=hL1eZWO5xgLNtADU%2bx2UKTsf4ba4GrmkZJrDgWylEcg%3d&risl=&pid=ImgRaw&r=0');
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    transform: translateX(50px);
+    border-radius: 5%;
+}
+
+.product-container{
+   max-width: 500px;
+   position: relative;
+   background:url('https://th.bing.com/th/id/R.7a1a81cd5cdd97c0324eec84071662b9?rik=SrBg9glhXEmOnQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-_L1ktLp_3Hc%2fUAU-VZy5C7I%2fAAAAAAAADLg%2fqHabgkm_dHY%2fs1600%2fRandom%2bHD%2bWallpapers%2b(23).jpg&ehk=hL1eZWO5xgLNtADU%2bx2UKTsf4ba4GrmkZJrDgWylEcg%3d&risl=&pid=ImgRaw&r=0');
+   height:580px;
+   border-radius: 4%;
+   box-shadow:rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+   animation: swing-in-top-fwd 3s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+@keyframes swing-in-top-fwd{
+0%{
+  transform: rotateX(-100deg);
+  transform-origin: top;
+  opacity:0;
+}
+100%{
+transform: rotateX(0deg);
+  transform-origin: top;
+  opacity:1;
+}
+}.price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    font-size:2.6rem;
+}
+.checkout-container{
+    display: grid;
+    place-items:center;
+    padding: 55px 35px;
+    height:100%;
+    box-shadow:rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+	-webkit-animation: slide-left 0.5s ease-in-out  ;
+	        animation: slide-left 0.5s ease-out alternate-reverse;
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+
+.detail{
+    font-size: 1.3em;
+    position: relative;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+@keyframes swing-in-top-fwd{
+0%{
+  transform: rotateX(-100deg);
+  transform-origin: top;
+  opacity:0;
+}
+100%{
+transform: rotateX(0deg);
+  transform-origin: top;
+  opacity:1;
+}
+}
+.detail .brand{
+margin-bottom: 0rem;
+padding-top:3rem;
+text-transform: capitalize;
+font-weight: bold;
+color: rgb(59, 156, 201);
+letter-spacing: 0.2rem;
+}
+.detail .productName{
+margin:1rem;
+letter-spacing: 0.2rem;
+}
+.imageSlide{
+    display: block;
+    width:400px;
+    margin: auto;
+    transition:1s ease-in;
+}
+img{
+    mix-blend-mode:normal;
+    vertical-align:middle ;
+    width:100%;
+    height: 350px;
+    max-height: min-content;
+    border-radius:5%;
+}
+.clicker{
+    position: relative;
+    bottom: -4rem;
+    display: flex;
+    justify-content: center;
+}
+button{
+    position:relative;
+    cursor:pointer;
+    border:1px solid rgb(88, 168, 221);
+    width:max-content;
+    padding:5px;
+    margin-top:-10%;
+    border-radius: 12%;
+    -webkit-user-select: none;
+    user-select: none;
+    height:max-content;
+    background-color: rgb(80, 154, 196);
+    color: black;
+    font-size:1.2rem;
+    
+}
+button:hover,.active{
+    background-color: rgb(67, 147, 212);
+}
+.checkout-container h1{
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(77, 157, 211);
+}
+.input-field :where(input){
+    background-color:inherit;
+    margin-bottom: 1rem;
+    width:max-content;
+    padding:15px;
+    border-radius: 1em;
+    color:black;
+    text-align: center;
+}
+
+.input-field ::placeholder{
+    color: rgb(107, 178, 226);
+}
+.input-field :is(:valid){
+    color:rgb(49, 173, 211);
+    border: rgb(18, 126, 228) 2px solid ;
+    outline: none;
+}
+@media only screen  and (max-width:800px){
+body{
+    overflow: auto;
+    background-color: rgb(34, 99, 184);
+}
+.container{
+    display: flex;
+    position:relative;
+    transform: translate(0%,0%);
+    top:0;
+    left:0;
+   
+}
+.sub-container{
+    width:100vw;
+    display: block;
+}
+
+.product-container{
+width:100vw;
+}
+.product-container img{
+    mix-blend-mode:normal;
+    vertical-align:middle;
+    width:100%;
+    height: 350px;
+    max-height: min-content;
+    border-radius:5%;
+}
+.left{
+    transform: none;
+}
+.right{
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    transform: none;
+}
+
+}
+@media only screen  and (max-width:1100px){
+body{
+    overflow: auto;
+    background-color: rgb(34, 99, 184);
+}
+
+.product-container img{
+    vertical-align:middle;
+    width:100%;
+    height: 350px;
+    max-height: min-content;
+    border-radius:5%;
+}
+
+
+}

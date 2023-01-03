@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://th.bing.com/th/id/R.ab4b816d375051eb4e67a8bfc3c94b5b?rik=wDX0Y0G3ajkieA&pid=ImgRaw&r=0">
+    <link rel="stylesheet" href="style.css">
+    <title>Checkout Page</title>
+</head>
+<header>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact Us</a</li>
+        <li><a href="">News</a></li>
+    </ul>
+</header>
+<body>
+    <div class="container">
+        <div class="sub-container">
+            <div class="left">
+                <div class="product-container">
+                    <div class="detail">
+                        <p class="brand">Electronics</p>
+                        <h2 class="productName">Apple Watch</h2>
+                    </div>
+                    <div class="imageSlide">
+                        <img class="image" src="https://th.bing.com/th/id/R.e7d5406b35b03154fc7ad7cacbfb0ec2?rik=6X9tybl6jFiM0Q&riu=http%3a%2f%2fcdn.bgr.com%2f2015%2f02%2fapple-watch-3.jpg&ehk=wZ6uBizwgO2gD0xHftB34R1Hcff2CG4JePV3tnmxJNY%3d&risl=&pid=ImgRaw&r=0" alt="apple watch"/>
+                    </div>
+                    <p class="price"></p>
+                    <div class="clicker">
+                    <button type="button" onclick="changeSlide()">Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="checkout-container">
+                    <h1>Checkout</h1>
+                    <div class="input-field">
+                        <input type="text" placeholder="Card Type" aria-autocomplete="both"/>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Card Number" aria-autocomplete="both"/>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Cardholder Name" aria-autocomplete="both"/>
+                    </div>
+                    <div class="input-field date ">
+                        <input type="date" placeholder="Expiry Date" />
+                    </div>
+                    <div class="input-field item">
+                        <input type="password"  placeholder="CVV"/>
+                    </div>
+                    <button class="clicker" type="submit" onclick="submit()">Complete</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
