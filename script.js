@@ -2,7 +2,7 @@
 const $ =document.querySelector.bind(document);
 
 var slideIndex=1; 
-
+changeSlide(slideIndex);
 
 function showSlide(){
     let slide = document.getElementsByClassName("imageSlide");
@@ -15,7 +15,7 @@ function showSlide(){
     for (i=0;i<button.length;i++){
         button[i].classList.remove("active");
     }
-        button[slideIndex-1].classList.add("active");
+        
     
 }
 
