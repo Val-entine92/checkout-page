@@ -4,10 +4,9 @@
     box-sizing: border-box;
     color:rgb(140, 35, 238);
     font-size: 1em;
-    background-color:black;
 }
 body{
-    overflow:auto;
+    background-color:black;
     background-repeat:no-repeat;
     background-blend-mode: multiply;
     width:100%;
@@ -26,12 +25,16 @@ ul{
 }
 
 li a{
-  color: rgb(140, 35, 238);
+    text-decoration:none;
+    display: flex;
+  color: black;
   padding: 15px 1px;
-  text-decoration:underline;
-font-size:2em;
+    font-size:2em;
+    border: 2px solid rgb(161, 96, 221);
+    border-radius: .5em;
 }
 .container{
+    margin-top:-10%;
     width:70vw;
     position:absolute;
     left:50%;
@@ -39,13 +42,23 @@ font-size:2em;
     transform: translate(-50%,50%);
     
 }
+.title{
+    color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:2%;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .sub-container{
 display:grid;
 grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
 }
 .right{
     background-color:rgb(140, 35, 238);
-    border-radius: 5%;
+    border-radius: 2%;
+    border: 2px solid rgb(235, 231, 231);
 }
 
 .product-container{
@@ -86,8 +99,8 @@ transform: rotateX(0deg);
     margin-bottom: 2rem;
     height:100%;
     box-shadow:rgba(0, 0, 0, 0.17) 0px -23px 25px 0px ;
-	-webkit-animation: slide-left 0.5s ease-in-out  ;
-	        animation: slide-left 0.5s ease-in-out alternate-reverse;
+	-webkit-animation: slide-left 0.5s ease-in ;
+	animation: slide-left 0.5s ease-in alternate-reverse;
 }
 @keyframes slide-left {
   0% {
@@ -99,7 +112,10 @@ transform: rotateX(0deg);
             transform: translateX(-100px);
   }
 }
-
+.message{
+    color: black;
+    font-size: 2em;
+}
 .detail{
     font-size: 1.3em;
     position: relative;
@@ -146,7 +162,7 @@ img{
     height: 350px;
     max-height: 100%;
     border-radius:5%;
-    object-fit:scale-down;
+    object-fit:contain;
 }
 .clicker{
     position: relative;
@@ -157,7 +173,7 @@ img{
 button{
     position:relative;
     cursor:pointer;
-    border:1px solid rgb(140, 35, 238);
+    border:1px solid rgb(16, 15, 17);
     width:max-content;
     padding:5px;
     margin-top:-10%;
@@ -178,7 +194,7 @@ button:hover,.active{
     font-size: 1.3rem;
     text-align: center;
     text-transform: capitalize;
-    color: rgb(140, 35, 238);
+    color: black;
 }
 .input-field :where(input){
     background-color:inherit;
@@ -191,12 +207,16 @@ button:hover,.active{
 }
 
 .input-field ::placeholder{
-    color: rgb(140, 35, 238);
+    color: black;
 }
 .input-field :is(:valid){
-    color:rgb(140, 35, 238);
-    border: 2px solid rgb(140, 35, 238);
+    color:black;
+    border: 2px solid rgb(9, 9, 10);
     outline: none;
+}
+.about{
+    display: flex;
+
 }
 @media only screen  and (max-width:800px){
 body{

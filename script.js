@@ -35,22 +35,25 @@ async function productInfo(){
                 $(".image").src=image;
                 $(".price").innerText=price + '$';
                 }
-            }
-function submit(){
-    let inputField = document.querySelector('.checkout-container');
-    if ((inputField.value)==null) {
-        $(".messge").inneerHTML="Please enter a value for all fields";
-        return;
-    }
 }
+
 $(".next").addEventListener('click',(event)=>{
     event.preventDefault()
     changeSlide()
     }
 )
-document.addEventListener('click',(event)=>{
-    event.preventDefault()
-})
+function submit() {
+    let cardTypeInput = document.querySelector('.checkout-container input[placeholder="Card Type"]');
+    let cardNumberInput = document.querySelector('.checkout-container input[placeholder="Card Number"]');
+    let cardholderNameInput = document.querySelector('.checkout-container input[placeholder="Cardholder Name"]');
+    let expiryDateInput = document.querySelector('.checkout-container input[placeholder="Expiry Date"]');
+    let cvvInput = document.querySelector('.checkout-container input[placeholder="CVV"]');
+
+    if (!cardTypeInput.value || !cardNumberInput.value || !cardholderNameInput.value || !expiryDateInput.value || !cvvInput.value) {
+        $(".message").innerHTML = "Please enter a value for all fields";
+        return;
+    }
+}
 
 function changeSlide(){
     productInfo();
