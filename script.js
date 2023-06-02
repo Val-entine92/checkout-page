@@ -16,14 +16,7 @@ function showSlide(){
         button[i].classList.remove("active");
     }
         
-    
 }
-
-
-function changeSlide(){
-    productInfo();
-    showSlide();
-    }
 
 async function productInfo(){
     await fetch('https://fakestoreapi.com/products/')
@@ -46,8 +39,20 @@ async function productInfo(){
 function submit(){
     let inputField = document.querySelector('.checkout-container');
     if ((inputField.value)==null) {
-        alert("Please enter a value for all fields");
-    }else{
-        alert("Submitted");
+        $(".messge").inneerHTML="Please enter a value for all fields";
+        return;
     }
+}
+$(".next").addEventListener('click',(event)=>{
+    event.preventDefault()
+    changeSlide()
+    }
+)
+document.addEventListener('click',(event)=>{
+    event.preventDefault()
+})
+
+function changeSlide(){
+    productInfo();
+    showSlide();
 }

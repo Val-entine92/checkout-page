@@ -2,32 +2,34 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    color:rgb(49, 176, 226);
+    color:rgb(140, 35, 238);
     font-size: 1em;
+    background-color:black;
 }
 body{
-    background-image: url('https://th.bing.com/th/id/R.c841c38757dfdb9a985a402195554561?rik=tu7%2fM5UuFAhe7Q&pid=ImgRaw&r=0');
     overflow:auto;
     background-repeat:no-repeat;
     background-blend-mode: multiply;
     width:100%;
 }
+header{
+    height:2vh;
+}
 ul{
     list-style-type:none;
-    margin:0;
-    padding:0;
+    margin:10;
+    padding:20;
     width: 100%;
-    background-image: url('https://th.bing.com/th/id/R.240c5578762f9009378dea6140d4dc6a?rik=qAuNNE2pMOME%2fQ&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fW0EZFqb.jpg&ehk=tqFcpfJH3Qozg5ZoKGP1Yub7pd778s102VvRCj7vuWM%3d&risl=&pid=ImgRaw&r=0');
+    background-color:rgb(140, 35, 238);
+    display: inline-flex; 
+    justify-content: space-evenly;
 }
 
 li a{
-  display: flex;  
-  color: rgb(78, 167, 226);
-  text-align: center;
+  color: rgb(140, 35, 238);
   padding: 15px 1px;
   text-decoration:underline;
-justify-content: center;
-font-size:1.3em;
+font-size:2em;
 }
 .container{
     width:70vw;
@@ -41,9 +43,8 @@ font-size:1.3em;
 display:grid;
 grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
 }
-
 .right{
-    background:url('https://th.bing.com/th/id/R.7a1a81cd5cdd97c0324eec84071662b9?rik=SrBg9glhXEmOnQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-_L1ktLp_3Hc%2fUAU-VZy5C7I%2fAAAAAAAADLg%2fqHabgkm_dHY%2fs1600%2fRandom%2bHD%2bWallpapers%2b(23).jpg&ehk=hL1eZWO5xgLNtADU%2bx2UKTsf4ba4GrmkZJrDgWylEcg%3d&risl=&pid=ImgRaw&r=0');
+    background-color:rgb(140, 35, 238);
     border-radius: 5%;
 }
 
@@ -51,8 +52,8 @@ grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
    max-width: 500px;
    position: relative;
    width:100%;
-   background:url('https://th.bing.com/th/id/R.7a1a81cd5cdd97c0324eec84071662b9?rik=SrBg9glhXEmOnQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-_L1ktLp_3Hc%2fUAU-VZy5C7I%2fAAAAAAAADLg%2fqHabgkm_dHY%2fs1600%2fRandom%2bHD%2bWallpapers%2b(23).jpg&ehk=hL1eZWO5xgLNtADU%2bx2UKTsf4ba4GrmkZJrDgWylEcg%3d&risl=&pid=ImgRaw&r=0');
    height:580px;
+   border: 2px solid blueviolet;
    border-radius: 4%;
    box-shadow:rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
    animation: swing-in-top-fwd 3s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
@@ -69,7 +70,8 @@ transform: rotateX(0deg);
   transform-origin: top;
   opacity:1;
 }
-}.price{
+}
+.price{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,7 +125,7 @@ margin-bottom: 0rem;
 padding-top:3rem;
 text-transform: capitalize;
 font-weight: bold;
-color: rgb(59, 156, 201);
+color: rgb(140, 35, 238);
 letter-spacing: 0.2rem;
 }
 .detail .productName{
@@ -144,7 +146,7 @@ img{
     height: 350px;
     max-height: 100%;
     border-radius:5%;
-    object-fit:contain;
+    object-fit:scale-down;
 }
 .clicker{
     position: relative;
@@ -155,7 +157,7 @@ img{
 button{
     position:relative;
     cursor:pointer;
-    border:1px solid rgb(88, 168, 221);
+    border:1px solid rgb(140, 35, 238);
     width:max-content;
     padding:5px;
     margin-top:-10%;
@@ -163,20 +165,20 @@ button{
     -webkit-user-select: none;
     user-select: none;
     height:max-content;
-    background-color: rgb(80, 154, 196);
+    background-color: rgb(140, 35, 238);
     color: black;
     font-size:1.2rem;
     
 }
 button:hover,.active{
-    background-color: rgb(67, 147, 212);
+    background-color: rgb(215, 197, 233);
 }
 .checkout-container h1{
     margin-bottom: 25px;
     font-size: 1.3rem;
     text-align: center;
     text-transform: capitalize;
-    color: rgb(77, 157, 211);
+    color: rgb(140, 35, 238);
 }
 .input-field :where(input){
     background-color:inherit;
@@ -189,11 +191,11 @@ button:hover,.active{
 }
 
 .input-field ::placeholder{
-    color: rgb(107, 178, 226);
+    color: rgb(140, 35, 238);
 }
 .input-field :is(:valid){
-    color:rgb(49, 173, 211);
-    border: rgb(18, 126, 228) 2px solid ;
+    color:rgb(140, 35, 238);
+    border: 2px solid rgb(140, 35, 238);
     outline: none;
 }
 @media only screen  and (max-width:800px){
@@ -224,7 +226,7 @@ width:100vw;
     max-width:100%;
     max-height: 100%;
     border-radius:5%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .left{
     transform: none;
@@ -239,7 +241,7 @@ width:100vw;
 @media only screen  and (max-width:1100px){
 body{
     overflow: auto;
-    background-color: rgb(79, 146, 209);
+    background-color: rgb(140, 35, 238);
 }
 
 .product-container img{
